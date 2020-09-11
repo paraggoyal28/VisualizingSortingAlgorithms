@@ -1,0 +1,43 @@
+{
+  "name": "template",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack -d --watch",
+    "build": "webpack -p",
+    "start": "nodemon server/index.js",
+    "prettier": "prettier --write -l\"src/**/*.{js, jsx}\"",
+    "precommit": "lint-staged",
+    "stylelint": "stylelint src",
+    "eslint": "eslint --cache src",
+    "eslint-no-cache": "eslint src"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/cli": "^7.11.6",
+    "@babel/preset-env": "^7.11.5",
+    "axios": "^0.15.3",
+    "css-loader": "^0.26.1",
+    "express": "^4.14.0",
+    "nodemon": "^1.11.0",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "react-redux": "^5.0.2",
+    "redux": "^3.6.0",
+    "redux-actions": "^1.2.0",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.14.0"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.1.0",
+    "@typescript-eslint/parser": "^4.1.0",
+    "eslint": "^7.8.1",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-react": "^7.20.6",
+    "prettier": "2.1.1",
+    "stylelint": "^13.7.0",
+    "stylelint-config-standard": "^20.0.0"
+  }
+}
